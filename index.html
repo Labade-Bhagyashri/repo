@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+        text-align: center;
+            background-color: paleturquoise;
+            color: red;
+            padding: 10px 0;
+            
+        }
+
+        #nav1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        #ul1 {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #li1 {
+            font-size: 20px;
+            margin-right: 20px;
+            padding: 5px;
+        }
+
+        #li1:hover {
+            border: 2px solid rgb(241, 7, 241);
+            border-radius: 20px;
+        }
+
+        #main-1, #main-2, #main-3, #main4 {
+            padding: 20px;
+        }
+        
+        #main-1, #main-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #intro, #intro-1 {
+            margin-top: 50px;
+        }
+
+        #image-box, #image-box-1 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid rgb(128, 128, 128);
+            box-shadow: 7px 3px 5px aqua;
+            margin-top: 20px;
+
+            box-shadow: ;
+        }
+
+        #hding {
+            font-size: 60px;
+        }
+
+        #service {
+            margin-left: 20px;
+            font-size: 30px;
+        }
+
+        #box1, #box2, #box3, #box4, #box5, #box6 {
+            background-color: rgb(53, 52, 52);
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            flex: 1 1 300px;
+        }
+
+        #main-3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+
+        #main4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #inputq {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        #username, #email1, #hu {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(134, 133, 133);
+            color: white;
+            border: none;
+        }
+
+        #hu {
+            height: 100px;
+        }
+
+        #button1 {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: yellow;
+            border-radius: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        #button1:hover {
+            background-color: gold;
+        }
+
+        #iconsf {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        #iconsf li {
+            list-style: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        #iconsf li:hover {
+            color: paleturquoise;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            #nav1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #ul1 {
+                flex-direction: column;
+            align-items: center;
+                text-align: center;
+            }
+
+            #li1 {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            #main-1, #main-2 {
+                text-align: center;
+            }
+
+            #image-box, #image-box-1 {
+                margin: 0 auto;
+            }
+
+            #hding {
+                font-size: 40px;
+            }
+
+            #service {
+                margin-left: 10px;
+                font-size: 24px;
+            }
+
+            #box1, #box2, #box3 {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            #main4 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #inputq {
+                width: 90%;
+            }
+
+            #button1 {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #hding {
+                font-size: 30px;
+            }
+
+            #service {
+                font-size: 20px;
+            }
+
+            #box1, #box2, #box3 {
+                padding: 10px;
+            }
+
+            #username, #email1, #hu {
+                font-size: 16px;
+            }
+
+            #button1 {
+                font-size: 16px;
+            }
+        }  #button1 {
+            background-color: red;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div id="nav1">
+            
+            <h1> <center>BHAGYASHRI</center></h1>
+            <ul id="ul1">
+                <li id="li1" class="bi bi-house"><a href="#Home">Home</a></li>
+                <li id="li1" class="bi bi-browser-edge"><a href="#About">About me</a></li>
+                <li id="li1" class="bi bi-person-circle"><a href="#hi1">Services</a></li>
+                <li id="li1" class="bi bi-person-circle"><a href="#My-work">My work</a></li>
+                <li id="li1" class="bi bi-person-circle"><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="main-1">
+        <div id="intro">
+            <span id="hi">
+                <h1>Hiii, I am Labade Bhagyashri <br> from Ahilyanagar Maharashtra <br> Frontend Developer</h1>
+            </span>
+        </div>
+        <img id="image-box" src="assets/my photo.jpg" alt="my photo">
+    </div>
+
+    <div id="main-2">
+       <br>
+       <br>
+       <br>
+       <br><br><br>
+        <div id="intro-1">
+            <h1 id="About">About me</h1>
+            <p id="p1"><b>A fresh-faced Computer science student, aspires to navigate the <br>complexities of the
+                    digital world with unwavering curiosity and a<br>
+                    thirst for knowledge. And I am EPL Student. EPL is not only name EPL is an brand. <br>
+                    I am writing to express my interest in the Java Developer position <br>at Our Company.I am currently
+                    in the second year of my computer <br>science program with a strong foundation in: </b></p>
+            <div id="line">
+                <details>
+                    <summary>My Skill</summary>
+                    <ul>
+                        <details>
+                            <summary>Programming Languages</summary>
+                            <ul>
+                                <li>C</li>
+                                <li>Java</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Backend</summary>
+                            <ul>
+                                <li>Java</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Frontend</summary>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                            </ul>
+                        </details>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Education</summary>
+                    <ul>
+                        <li>BSc Comp Science</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <div id="service">
+        <h1 id="hi1">My Services</h1>
+    </div>
+
+    <div id="main-3">
+        <div id="box1">
+            <h1 id="coding" class="bi bi-code-slash"></h1>
+            <h1 id="hel">Web Development</h1>
+            <p id="hel">In Web Development We can Learn <br> Frontend Languages like HTML, CSS <br>JavaScript and
+                JavaScript Library Like React <br>And framework Angular View.JS.</p>
+            <h4><a href="#coding">Learn more</a></h4>
+        </div>
+        <div id="box2">
+            <h1 id="coding" class="bi bi-github"></h1>
+            <h1 id="hel">Version Control <br>Tool-GitHub</h1>
+            <p id="hel">On GitHub We Can create our Own Repositories and also Create Host The Project</p>
+            <h4><a href="#coding">Learn more</a></h4>
+        </div>
+        <div id="box3">
+            <h1 id="coding" class="bi bi-search"></h1>
+            <h1 id="hel">Web Development</h1>
+            <p id="hel">We Create our own Virtual Assistant and <br>also make Chat-Al Application with help <br>Frontend
+                and Using API</p>
+            <h4><a href="#coding">Learn more</a></h4>
+        </div>
+    </div>
+
+    <div id="main4">
+        <div id="main41">
+            <h1 id="Contact">Contact Me</h1>
+            <i class="bi bi-envelope" id="email"></i><a href="mailto:bhagyshrilabade4@gmail.com" id="hia"> Send Mail</a><br><br>
+            <i class="bi bi-telephone-fill" id="email"></i><a href="tel:+91 8237948211" id="hia">Call me</a>
+            <div id="iconsf">
+                <li id="y1" class="bi bi-github"><a href="https://github.com" target="_blank"></a></li>
+                <li id="y2" class="bi bi-facebook"><a href="https://facebook.com" target="_blank"></a></li>
+                <li id="y3" class="bi bi-linkedin"><a href="https://linkedin.com" target="_blank"></a></li>
+                <li id="y4" class="bi bi-instagram"><a href="https://instagram.com" target="_blank"></a></li>
+                <li id="y5" class="bi bi-youtube"><a href="https://youtube.com" target="_blank"></a></li>
+            </div>
+            <br><br>
+            <div id="dow"><a href="assets/labade resume (1) (2).pdf" download="download">Download CV..</a></div>
+        </div>
+        <div id="inputq">
+            <input type="text" id="username" placeholder="Your name"><br>
+            <input type="text" id="email1" placeholder="Your email">
+            <textarea name="comment" id="hu" placeholder="Your Message"></textarea>
+            <button id="button1"><a href="#king">Submit</a></button>
+        </div>
+        
+    </div>
+</body>
+
+</html>
